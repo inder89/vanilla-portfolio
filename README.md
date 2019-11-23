@@ -1,1 +1,1 @@
-# vanilla-potfolio
+# vanilla-portfolio
