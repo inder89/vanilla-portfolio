@@ -1,0 +1,59 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: reross-quadratic, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#welcome-section {
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/AdobeStock_273650686.jpeg);
+	background-size: cover;
+	background-size: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+.nav-menu {
+	display: flex;
+	list-style-type: none;
+}
+.nav-left {
+	flex-basis: 10%;
+}
+.nav-menu > .nav-right > a {
+	background-color: #ffb600;
+	display: block;
+	padding: 0.5em 1em;
+	color: #000;
+	text-decoration: none;
+	border-radius: 0.5em;
+}
+.nav-menu > li + li {
+	margin-left: 1.5em;
+}
+
+.nav-menu > .nav-right {
+	flex-basis: 10%;
+}
+.nav-menu > .nav-right > a:hover {
+	background-color: #fff;
+	color: #1a1a1a;
+	border-bottom: 3px solid #000;
+	border-radius: 0em;
+}
+.nav-menu > .nav-left {
+	flex-basis: 70%;
+}
