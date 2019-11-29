@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	font-size: 10px;
 }
 
 *,
@@ -15,45 +16,118 @@ body {
 	font-style: normal;
 }
 
+h1 {
+	font-size: 4.5rem;
+}
+
 #welcome-section {
 	height: 100vh;
 	width: 100%;
 	background-image: url(../img/AdobeStock_273650686.jpeg);
 	background-size: cover;
 	background-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#projects {
+	text-align: center;
 }
 
 a {
 	text-decoration: none;
 }
+
+nav {
+	padding: 1rem 0;
+	background: #f2f4f5;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	position: sticky;
+	top: 0;
+}
+
+/* .sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+} */
+
 .nav-menu {
 	display: flex;
 	list-style-type: none;
+	text-decoration: none;
+	font-size: 2.5rem;
+	margin: 0 0 1rem 0;
 }
 .nav-left {
 	flex-basis: 10%;
+	display: flex;
+	justify-content: start;
 }
+
+.nav-left > img {
+	width: 5rem;
+	height: 10rem;
+	border-radius: 0.5em;
+	box-shadow: inset 0 0 10px #000000;
+}
+.nav-left > a {
+	color: #000;
+	font-size: 4rem;
+	align-self: center;
+	padding-left: 1rem;
+}
+
+.nav-menu > .nav-right {
+	flex-basis: 10%;
+	display: flex;
+	align-items: center;
+}
+
 .nav-menu > .nav-right > a {
-	background-color: #ffb600;
 	display: block;
 	padding: 0.5em 1em;
+
 	color: #000;
-	text-decoration: none;
 	border-radius: 0.5em;
+	text-align: center;
 }
 .nav-menu > li + li {
 	margin-left: 1.5em;
 }
 
-.nav-menu > .nav-right {
-	flex-basis: 10%;
-}
 .nav-menu > .nav-right > a:hover {
-	background-color: #fff;
+	background-color: #f7c90e;
 	color: #1a1a1a;
-	border-bottom: 3px solid #000;
-	border-radius: 0em;
+	/* border-bottom: 3px solid #000; */
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+		0 0 20px rgba(51, 69, 80, 0.185) inset;
 }
 .nav-menu > .nav-left {
 	flex-basis: 70%;
+}
+
+footer {
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
+footer > section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 80%;
+}
+
+footer > section > ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-between;
+	margin-bottom: 3.5em;
 }
